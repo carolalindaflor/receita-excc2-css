@@ -1,0 +1,211 @@
+/* Paleta de Cores: Verde Oliva, Verde Folha e Marrom Escuro */
+:root {
+    --verde-principal: #4C7C54; /* Verde Folha/Esmeralda - Destaque */
+    --verde-claro: #E6EDE6;    /* Verde Quase Branco - Fundo Suave */
+    --marrom-escuro: #4A403A; /* Marrom Escuro - Textos e Bordas */
+    --marrom-quente: #B38867; /* Marrom Quente/Cobre - Botões e Links */
+    --cor-fundo-claro: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--verde-claro); /* Fundo claro e suave */
+    color: var(--marrom-escuro);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header e Foto de Perfil --- */
+
+.header-quesillo {
+    background-color: var(--verde-principal);
+    color: var(--cor-fundo-claro);
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--marrom-quente); /* Borda marrom quente */
+    margin-bottom: 15px;
+}
+
+.header-quesillo h1 {
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+/* --- Seção de Vídeo Adicional --- */
+
+.video-container {
+    margin: 30px 0;
+    text-align: center;
+    background-color: var(--cor-fundo-claro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-embed {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* Garante que o iframe seja responsivo */
+    max-width: 100%; 
+    height: auto;
+}
+
+/* --- Receita: Ingredientes e Preparo --- */
+
+.receita-conteudo {
+    background-color: var(--cor-fundo-claro);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--verde-claro);
+}
+
+h2, h3 {
+    color: var(--verde-principal);
+    font-weight: 600;
+}
+
+.h2-preparo {
+    margin-top: 30px;
+}
+
+/* Estilização para separar Ingredientes e Preparo */
+.ingredientes-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid var(--verde-claro);
+    border-radius: 6px;
+    background-color: #f7fcf7; /* Fundo muito leve para a seção de ingredientes */
+}
+
+.lista-ingredientes {
+    flex: 1;
+}
+
+.lista-ingredientes h3 {
+    color: var(--marrom-escuro);
+    border-bottom: 1px solid var(--marrom-quente);
+    padding-bottom: 3px;
+    font-size: 1.1em;
+}
+
+.lista-ingredientes ul {
+    list-style-type: '🍮 '; /* Ícone para os itens */
+    padding-left: 20px;
+}
+
+/* Estilização do Modo de Preparo (Separado) */
+.passos-preparo {
+    list-style-type: decimal;
+    padding-left: 25px;
+    background-color: var(--verde-claro); /* Fundo suave diferente para o preparo */
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 5px solid var(--marrom-quente); /* Destaque lateral */
+}
+
+.passos-preparo li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+/* --- Formulário --- */
+
+.formulario-feedback {
+    background-color: var(--verde-claro);
+    padding: 30px;
+    border-radius: 8px;
+    margin: 30px 0;
+    border: 1px solid var(--marrom-quente);
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    color: var(--verde-principal);
+    font-weight: 600;
+    display: block;
+}
+
+.campo input[type="text"],
+.campo textarea {
+    border: 1px solid var(--marrom-quente);
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Garante que padding não aumente o width total */
+    border-radius: 4px;
+}
+
+.btn-enviar {
+    background-color: var(--marrom-quente);
+    color: var(--cor-fundo-claro);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: var(--marrom-escuro);
+}
+
+/* --- Botão de Regresso e Footer --- */
+
+.btn-regresso {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 40px auto;
+    padding: 10px 25px;
+    background-color: var(--marrom-quente); /* Cor de destaque */
+    color: var(--cor-fundo-claro);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.btn-regresso:hover {
+    background-color: var(--marrom-escuro);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--marrom-escuro); /* Marrom escuro no rodapé */
+    color: var(--verde-claro);
+    font-size: 0.9em;
+}
+
+/* Responsividade Básica */
+@media (max-width: 650px) {
+    .ingredientes-grid {
+        flex-direction: column;
+    }
+}
+
